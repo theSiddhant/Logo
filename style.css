@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify{
+    width: 240px;
+    height: 100px;
+    background: #1db954;
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    width: 33px;
+    height: 5px;
+    top: 38px;
+    left: 28px;
+    border-radius: 40%/6px 6px 0 0;
+    border: solid 3px;
+    border-color: #1db954 transparent transparent;
+}
+
+.line::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 5px;
+    top: 5px;
+    left: -2px;
+    border-radius: 40%/5px 5px 0 0;
+    border: solid 3px;
+    border-color: #1db954 transparent transparent;  
+}
+
+
+.line::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 4px;
+    top: 13px;
+    border-radius: 50%/5px 5px 0 0;
+    border: solid 3px;
+    border-color: #1db954 transparent transparent;
+      
+}
+
+.spotify::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border-radius: 50px;
+}
+
+.spotify::after{
+    content: "Spotify";
+    font-size: 2.5em;
+    position: absolute;
+    top: 18px;
+    left: 80px;
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+span{
+    position: absolute;
+    right: 16px;
+    top: 30px;
+    color: #fff;
+}
+
+.vlc{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    margin: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vlc .base{
+    height: 0;
+    width: 120px;
+    margin-top: 60px;
+    border-bottom: 30px solid #fff;
+    border-left: 15px solid transparent;
+    border-right:  15px solid transparent;
+    position: relative;
+}
+
+.base::before{
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 20px;
+    background: orange;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -5px;
+    left: 9px;
+}
+
+.vlc .base .top{
+    height: 0px;
+    width: 10px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #fff;
+    margin-top: -80px;
+    margin-left: 30px;
+    border-radius: 40%;
+    position: relative;
+}
+
+.top::before{
+    position: absolute;
+    content: "";
+    height: 0;
+    top: 45px;
+    left: -35px;
+    width: 30px;
+    border-bottom: 30px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: -10%;
+
+}
