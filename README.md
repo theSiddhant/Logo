@@ -1,9 +1,8 @@
 # Logo
 A logo designing using HTML and CSS
 
-Spotify,
-VLC,
-working on others too
+Spotify, VLC done
+Working on others too
 
-will update later.
+Will update later.
 
